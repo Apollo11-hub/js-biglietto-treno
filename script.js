@@ -9,9 +9,6 @@ const askDistance = prompt("Quanti Chilometri dovrai percorrere?");
 const askAge = prompt("Quanti anni hai?")
 
 
-
-
-
 if(askAge < 18){
   travelPrice = (askDistance * 0.21 - (20*0.21  / 100))
 } else if (askAge > 64){
@@ -19,6 +16,8 @@ if(askAge < 18){
 }else {
   travelPrice = (askDistance*0.21)
 }
+
+
 
 //Riduzione totale dei numeri a 2 decimali
 const decimalTwo = travelPrice.toFixed(2)
